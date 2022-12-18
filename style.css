@@ -1,0 +1,419 @@
+
+
+
+
+
+
+
+@font-face {
+    font-family:'proggy' ;
+    src: url('ProggyClean.ttf') format(truetype);
+}
+
+/* ::-webkit-scrollbar-track {
+    background-color: #F4F4F4;
+
+    tentar mudar o scroll bar
+} */
+
+
+body{
+    margin: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    background-image: url(./fundo4.jpg);
+    background-size: cover;
+    background-repeat:repeat;
+    background-attachment: fixed;
+   overflow-x: hidden;
+}
+
+
+main{
+    width: 100%;
+    height: 800px;
+    
+
+    text-align: center;
+}
+
+#barra{
+    position: fixed;
+    right: 0px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #38E54D;
+    font-family: 'proggy';
+    font-size: 20px;
+}
+
+
+#textos{
+    
+    
+    display: inline-flex;
+    text-align: center;
+    transition: all ,5s;
+    
+}
+
+
+#wpp,#face, #tt, #git {
+    margin-right:100px ;
+}
+
+
+#wpp,#face, #tt, #git, #insta{
+    color: black;
+    font-weight: bold;
+}
+
+/* #wpp{
+    margin-left: 332px;
+} */
+
+/* animações hover*/
+
+#wpp:hover{
+    background-color: black;
+    color: #38E54D;
+}
+
+#face:hover{
+    background-color: black;
+    color: #38E54D;
+}
+
+#tt:hover{
+    background-color: black;
+    color: #38E54D;
+}
+#git:hover{
+    background-color: black;
+    color: #38E54D;
+}
+#insta:hover,
+#menu:hover{
+    background-color: black;
+    color: #38E54D;
+}
+
+#menu{
+    
+    background-color: transparent;
+    border: none;
+    color: black;
+    font-size: 30px;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+
+}
+
+
+
+
+
+
+#texto1{
+
+    font-family:'proggy';
+
+color: #38E54D;
+   margin-top: 20px;
+   margin-bottom: 0;
+  
+}
+
+#botoes{
+    margin-top: 20px;
+    margin-bottom: 0;
+margin-left: 90%;
+
+    
+    
+}
+
+
+
+
+#juanfoto1{
+    margin-top: 100px;
+    width: 230px;
+    border: 2px;
+    border-radius: 500px;
+    border-style: solid;
+    border-color: #38E54D;
+  
+}
+
+
+@keyframes tipo1 {
+    from{ 
+       width: 0px;
+    }
+    to{
+        width: 400px;
+    }
+}
+
+@keyframes tipo {
+    from{ 
+       width: 0px;
+    }
+    to{
+        width: 200px;
+    }
+}
+
+@keyframes tipo3 {
+
+    from { width: 0px;
+        
+
+    }
+    to{ width: 200px;
+
+    }
+    
+}
+
+
+h1{
+    font-size: 50px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    animation: tipo1 4s steps(15) 0s normal;
+white-space: nowrap;
+overflow: hidden;
+    
+}
+
+h2{
+    
+    font-size: 35px;
+    margin: 0 auto;
+animation: tipo 4s steps(15) 0s normal;
+white-space: nowrap;
+overflow: hidden;
+
+
+}
+
+
+/* @keyframes tipo1 {
+    from{ 
+       width: 0px;
+    }
+    to{
+        width: 400px;
+    }
+}
+
+
+@keyframes tipo {
+    from{ 
+       width: 0px;
+    }
+    to{
+        width: 200px;
+    }
+} */
+
+
+a{
+    text-decoration: none;
+    color:#38E54D ;
+}
+
+#teste{
+
+    width: 300px;
+}
+
+
+#cobra{
+    margin-top: 170px;
+    width: 60px;
+    height: 10px;
+    background-color: #38E54D;
+    animation: cobra infinite 4s steps(90) 4s ;
+}
+
+@keyframes cobra {
+    from{ 
+        margin-right: 100%;
+       margin-left: 0px;
+    }
+    to{
+        margin-right: 0px;
+        margin-left: 100%;
+    }
+}
+
+
+
+
+
+
+
+
+/* #menu:focus ~ #textos{
+    height: 250px;
+    width: 100px;
+    background-color: #38E54D;
+    display: flex;
+    
+} */
+
+
+
+
+
+
+@media screen and (max-width:723px) {
+    #juanfoto1{
+        width: 30%;
+    }
+    /* h1{
+        font-size: 100%;
+    } */
+    
+#textos, #barra{
+   flex-direction: column;
+   align-items:flex-start
+   
+}
+#textos{
+    align-items: center;
+    position: absolute;
+    left: 10px;
+    top: 30px;
+    display: none;
+    width: 250px;
+    height: 300px;
+}
+
+#menu{
+    display: flex;
+}
+#botoes{
+   margin-top: 100px;
+}
+
+#wpp, #insta, #tt, #face, #git{
+    border-bottom: 3px;
+    border-right: 0;
+    border-left: 0;
+    border-top: 0;
+    border-color: black;
+    border-style: solid;
+    margin-right: 0px;
+    
+}
+    
+}
+
+
+@media screen and (max-width:420px){
+h1{
+    font-size:40px ;
+}
+
+h2{
+    font-size:30px ;
+}
+#menu{
+    right: 0px;
+    
+}
+
+}
+header{
+    height: 700px;
+
+    margin-left:15% ;
+    margin-right:15% ;
+    text-align: center;
+   
+    
+}
+
+#sobre{
+    text-align: center;
+    margin-top: 20%;
+    font-family: 'proggy';
+    color: white;
+}
+
+
+
+#textsobremim{
+   text-align: center;
+    color: white;
+    font-family: 'proggy';
+    font-size: 30px;
+    margin-top: 0;
+    
+    
+    
+    
+    
+}
+#continuar{
+    display: inline-flex;
+   
+    color: white;
+    font-family: 'proggy';
+    font-size: 30px;
+    height: 300px;
+    
+    
+   
+
+}
+#botaosim{
+    margin-top: 23px;
+    margin-left: 20px;
+    height: 30px;
+    cursor: pointer;
+}
+
+#barrinhacmd{
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    height: 30px;
+    background-color: white;
+    border-bottom: 0;
+    border-top: 1px;
+    border-left: 0;
+    border-right: 0;
+    border-style: solid;
+    border-color: rgb(82, 78, 78);
+    margin-bottom: 0;
+}
+
+
+
+
+#textoconti{
+
+    background-color: black;
+    margin-top: 0;
+    
+
+
+    
+
+    
+}
+#prompt{
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+
+
